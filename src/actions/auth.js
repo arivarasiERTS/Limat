@@ -8,7 +8,7 @@ export const signin = (formData, navigate) => async (dispatch) => {
     dispatch({ type: AUTH, data });
 
     //router.push('/');
-    navigate('/');
+    navigate.push('/posts');
   } catch (error) {
     console.log(error);
   }
@@ -20,8 +20,9 @@ export const signup = (formData, navigate) => async (dispatch) => {
 
     dispatch({ type: AUTH, data });
 
-   // router.push('/');
-   navigate('/');
+   //router.push('/');
+   navigate.push('/posts');
+
   } catch (error) {
     console.log(error);
   }
